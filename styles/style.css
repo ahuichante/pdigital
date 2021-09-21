@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #c8c6c6;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size-adjust: initial;
+    font-weight: normal;
+}
+
+
+
+header{
+    background-color: #4B6587;
+}
+
+h1{
+    display: inline-block;
+    color: #F7F6F2;
+}
+
+.nav__ul {
+    color: #F7F6F2;
+}
+
+.nav__ul li{
+    display: inline;
+}
+
+.nav__ul a {
+    color: #F7F6F2;
+    text-decoration: none;
+}
+
+.nav__div{
+    color: #F7F6F2;
+}
+
+.nav__div li{
+    display: inline;
+}
+
+.nav__div::before{
+    content: "Contacto";
+    color: #F7F6F2;
+}
+
+.nav__div a {
+    color: #F7F6F2;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+    background-color: #F0E5CF;
+}
+
+footer{
+    background-color: #4B6587;
+}
