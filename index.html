@@ -3,27 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INICIO</title>
 </head>
 <body>
     <header class="title"> <!--Encabezado principal que voy a hacer en modo de barra la cual va a contener logo y barras separadas-->
-        <h1 class="title__h1">LISTAS SPOTIFY</h1> <!--Aca seria dond voy a colocar el logo de la pagina-->
+        <figure class="fig">
+            <a href="index.html"><img src="" alt="listas-spotify" class="fig__img"></a> <!--Aca seria dond voy a colocar el logo de la pagina-->
+            <figcaption class="fig__cap">
+             <h1>LISTAS SPOTIFY</h1>
+            </figcaption>
+
+        </figure>
         <nav class="nav">
-            <div class="nav__div">
+            <ul class="nav__ul">
+                <li class="nav__li"><a href="index.html">Inicio</a></li>                    <li class="nav_li"><a href="#">Mis listas</a></li>
+                <li class="nav__li"><a href="#"></a></li>
+            </ul>
+            
+            <div class="nav__div"> <!--Aca planeo poner unos pocos contactos como en el pie en forma de iconos-->
                 <ul class="nav__div-ul">
-                    <li class="nav__div-li"><a href="index.html">Inicio</a></li>
-                    <li class="nav__div-li"><a href="#">Mis listas</a></li>
-                    <li class="nav__div-li"><a href="#"></a></li>
+                    <li class="nav__div-li"><a href="https://www.facebook.com/profile.php?id=100055884692985" target="_blank">Facebook</a></li>
+                    <li class="nav__div-li"><a href="https://www.instagram.com/ahuichante/?hl=es" target="_blank">Instagram</a></li>
+                    <li class="nav__div-li"><a href="https://wa.me/542974742209" target="_blank">Whatsapp</a></li>
                 </ul>
-            </div>
-            <div class="nav__div-2"> <!--Aca planeo poner unos pocos contactos como en el pie en forma de iconos-->
-                    <p class="nav__div-footer">Contacto</p>
-                    <ul class="nav__div-footer-ul">
-                        <li class="nav__div-footer-li"><a href="https://www.facebook.com/profile.php?id=100055884692985" target="_blank">Facebook</a></li>
-                        <li class="nav__div-footer-li"><a href="https://www.instagram.com/ahuichante/?hl=es" target="_blank">Instagram</a></li>
-                        <li class="nav__div-footer-li"><a href="https://wa.me/542974742209" target="_blank">Whatsapp</a></li>
-                    </ul>
             </div>
         </nav>
     </header>
@@ -34,7 +41,7 @@
             <h2>TITULOS</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laudantium corrupti sint ad reprehenderit quidem itaque repellat explicabo consequuntur saepe sapiente deserunt eligendi ex, nobis nostrum vel iure, magni veniam?</p>
             </div>
-            <div class="flex-container">
+            <div class="form-container">
                 <form class="form">
                     <div class="form__section">
                         <input type="name" class="form__input" placeholder="Nombre" required>
@@ -52,9 +59,10 @@
                 <div class="form-img">
                     <div class="img-container">
                         <div>
-                            <img src="">imagen</div>
-                        </div>         
-                    </div>
+                            <img src="" alt="Imagen">
+                        </div>
+                    </div>         
+                </div>
             </div>
         </section>
 
@@ -62,7 +70,7 @@
            <div>
             <h2>TITULOS</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laudantium corrupti sint ad reprehenderit quidem itaque repellat explicabo consequuntur saepe sapiente deserunt eligendi ex, nobis nostrum vel iure, magni veniam?</p>    
-            <div class="flex-container">
+            <div class="form-container">
                 <form class="form">
                     <div class="form__section">
                         <input type="name" class="form__input" placeholder="Nombre" required>
@@ -80,9 +88,10 @@
                 <div class="form-img">
                     <div class="img-container">
                         <div>
-                            <img src="">imagen</div>
-                        </div>         
-                    </div>
+                            <img src="" alt="Imagen">
+                        </div>
+                    </div>         
+                </div>
             </div>
         </section>
         
@@ -90,8 +99,8 @@
             <div>
                 <h2>TITULOS</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laudantium corrupti sint ad reprehenderit quidem itaque repellat explicabo consequuntur saepe sapiente deserunt eligendi ex, nobis nostrum vel iure, magni veniam?</p>
-                </div>
-                <div class="flex-container">
+            </div>
+                <div class="form-container">
                     <form class="form">
                         <div class="form__section">
                             <input type="name" class="form__input" placeholder="Nombre" required>
@@ -109,9 +118,10 @@
                     <div class="form-img">
                         <div class="img-container">
                             <div>
-                                <img src="">imagen</div>
-                            </div>         
-                        </div>
+                                <img src="" alt="Imagen">
+                            </div>
+                        </div>         
+                    </div>
                 </div>
         </section>
 
@@ -119,8 +129,8 @@
             <div>
                 <h2>TITULOS</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laudantium corrupti sint ad reprehenderit quidem itaque repellat explicabo consequuntur saepe sapiente deserunt eligendi ex, nobis nostrum vel iure, magni veniam?</p>
-                </div>
-                <div class="flex-container">
+            </div>
+            <div class="form-container">
                     <form class="form">
                         <div class="form__section">
                             <input type="name" class="form__input" placeholder="Nombre" required>
@@ -138,10 +148,11 @@
                     <div class="form-img">
                         <div class="img-container">
                             <div>
-                                <img src="">imagen</div>
-                            </div>         
-                        </div>
-                </div>
+                                <img src="" alt="Imagen">
+                            </div>
+                        </div>         
+                    </div>
+            </div>
         </section>
 
         <section>
@@ -149,7 +160,7 @@
                 <h2>TITULOS</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laudantium corrupti sint ad reprehenderit quidem itaque repellat explicabo consequuntur saepe sapiente deserunt eligendi ex, nobis nostrum vel iure, magni veniam?</p>
                 </div>
-                <div class="flex-container">
+                <div class="form-container">
                     <form class="form">
                         <div class="form__section">
                             <input type="name" class="form__input" placeholder="Nombre" required>
@@ -167,9 +178,10 @@
                     <div class="form-img">
                         <div class="img-container">
                             <div>
-                                <img src="">imagen</div>
-                            </div>         
-                        </div>
+                                <img src="" alt="Imagen">                            
+                            </div>
+                        </div>         
+                    </div>
                 </div>
         </section>
 
@@ -177,8 +189,8 @@
             <div>
                 <h2>TITULOS</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laudantium corrupti sint ad reprehenderit quidem itaque repellat explicabo consequuntur saepe sapiente deserunt eligendi ex, nobis nostrum vel iure, magni veniam?</p>
-                </div>
-                <div class="flex-container">
+            </div>
+            <div class="flex-container">
                     <form class="form">
                         <div class="form__section">
                             <input type="name" class="form__input" placeholder="Nombre" required>
@@ -196,10 +208,11 @@
                     <div class="form-img">
                         <div class="img-container">
                             <div>
-                                <img src="">imagen</div>
-                            </div>         
-                        </div>
-                </div>
+                                <img src="" alt="Imagen">
+                            </div>
+                        </div>         
+                    </div>
+            </div>
         </section>
 
     </main>
