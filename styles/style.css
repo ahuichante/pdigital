@@ -28,10 +28,12 @@ nav {
     justify-content: center;
     align-items: center;
     align-content: center;
+    font-weight: 600;
 }
 
 .nav a{
     color:#F7F6F2;
+    text-decoration: none;
 }
 
 .nav__ul{    
@@ -48,4 +50,18 @@ nav {
     display: inline;
     padding: 5px;
     font-size: 20px;
+}
+
+main{
+    background: #C8C6C6;
+}
+
+section{
+    background: #F0E5CF;
+}
+
+footer{
+    background: #4B6587;
+    color: black;
+    
 }
