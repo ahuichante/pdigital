@@ -14,7 +14,6 @@ header{
 figure {
     display: inline-flex;
     width: 50%;
-    height: -webkit-fill-available;
     align-content: flex-start;
     justify-content: center;
     align-items: center;
