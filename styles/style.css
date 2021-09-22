@@ -9,6 +9,10 @@ header{
     background: #4B6587;
     height: 100px;
     display: flex;
+    position: fixed;
+    width: 100%;
+    left: 0; 
+	top: 0;
 }
 
 figure {
@@ -57,12 +61,24 @@ nav {
     justify-content: center;
     align-items: center;
     align-content: center;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .nav a{
     color:#F7F6F2;
     text-decoration: none;
+}
+
+.nav a:hover{
+    color: #f5f4ef;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav a:active{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .nav__ul{    
@@ -83,6 +99,7 @@ nav {
 
 main{
     background: #C8C6C6;
+    margin-top: 100px;
 }
 
 section{
