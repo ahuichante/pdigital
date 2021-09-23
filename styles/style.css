@@ -47,10 +47,17 @@ figure {
 
 .fig__cap a{
     color: #F7F6F2;
+    -webkit-text-stroke: 1px #000000;
     height: 100px;
     text-decoration: none;
 }
 
+.fig__cap a:hover{
+    color: #F7F6F2;
+    -webkit-text-stroke: 1px #F7F6F2;
+    height: 100px;
+    text-decoration: none;
+}
 
 
 nav {
@@ -106,8 +113,18 @@ section{
     background: #F0E5CF;
 }
 
-footer{
+.footer{
     background: #4B6587;
     color: black;
 
+}
+
+.footer a{
+        color:#F7F6F2;
+        text-decoration:none; 
+}
+
+.footer a:hover{
+    color:#dee5ed;
+    text-shadow: 1px;
 }
