@@ -45,14 +45,14 @@ figure {
     width: 50%;
 }
 
-.fig__cap a{
+.fig__cap a {
     color: #F7F6F2;
     -webkit-text-stroke: 1px #000000;
     height: 100px;
     text-decoration: none;
 }
 
-.fig__cap a:hover{
+.fig__cap a:hover {
     color: #F7F6F2;
     -webkit-text-stroke: 1px #F7F6F2;
     height: 100px;
