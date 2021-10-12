@@ -243,8 +243,8 @@ textarea{
     padding: 7px;
     margin: 0px 6px;
     border: none;
-    color: white;
-    background: rgba(37, 4, 72, 0.8);
+    color: #230085;
+    background: rgba(255, 255, 255, 0.8);
     max-height: 80px;
     resize: none;
 }
@@ -277,10 +277,14 @@ textarea:active{
 
 
 .footer{
+    height: auto;
+    display: flex;
     width: 100%;
     background: #fdcb01;
     color: black;
-
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer a{
@@ -291,4 +295,24 @@ textarea:active{
 .footer a:hover{
     color:#dee5ed;
     text-shadow: 1px;
+}
+
+.contacto{
+    color: white;
+}
+
+.footer__ul{    
+    display: flex;
+    list-style-type: disc;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.footer__li{
+    display: flex;
+    padding: 0px 3px;
+    font-size: 15px;
 }
