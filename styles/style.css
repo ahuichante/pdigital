@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'Open Sans Condensed';
+    font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
 
@@ -52,6 +52,24 @@ figure {
 .fig__img{
     max-height: 100px;
     width: 100px;
+
+}
+
+.fig__img:hover{
+    animation: 2s spin infinite reverse;
+}
+
+@keyframes spin{
+    from {
+        border: 1px solid black;
+        border-radius: 50px;
+        transform:rotate(0deg);
+    }
+    to {
+        border: 1px solid black;
+        border-radius: 50px;
+        transform:rotate(360deg);
+    }
 }
 
 
@@ -68,9 +86,20 @@ figure {
 
 .fig__cap a:hover{
     color: #F7F6F2;
-    -webkit-text-stroke: 1px #F7F6F2;
-    height: 100px;
     text-decoration: none;
+    animation: 2s texto infinite reverse;
+}
+
+@keyframes texto{
+    from{
+        -webkit-text-stroke: 0.1px white;
+        text-shadow: 0px 0px 1px #00ebea;
+    }
+    to{
+        -webkit-text-stroke: 0.5px white;        
+        text-shadow: 0px 0px 3px #00ebea;
+    }
+
 }
 
 
@@ -105,11 +134,12 @@ nav {
 .nav__ul{    
     display: flex;
     list-style-type: disc;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-content: flex-end;
-    align-items: flex-end;
-    justify-content: space-around;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 30%;
 }
 
 .nav__li{
@@ -120,12 +150,23 @@ nav {
 
 main{
     background-image: url(../Images/background-1789175.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: local;
+    background-size: auto;
+    animation: 15s urlfondo infinite alternate-reverse;
+}
+
+@keyframes urlfondo {
+    from{
+        background-position: top center;
+    }
+    to{
+        bottom: center top;
+    }
 }
 
 .section {
+    text-shadow: 1px 1px 3px #250448;
     display: flex;
     width: 100%;
     font-weight: 500;
@@ -142,34 +183,35 @@ main{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    flex-wrap: wrap;
     align-content: center;
     align-items: center;   
 }
 
 .galeria__img{
+    margin-top: 20px;
+    height: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    align-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 .galeria__img img{
-    height: 100px;
-    width: 95%;
-    border: 3px solid rgba(32, 40, 80, 0.7);
+    height: 110px;
+    width: 90%;
+    padding: 5px;
     border-radius: 50px;
 }
 
 .galeria__img img:hover{
-    height: 100px;
+    height: 110px;
     width: 100%;
-    border: 3px solid rgba(32, 40, 80, 0.7);
-    border-radius: 10px;
+    border-radius: 25px;
+    padding: 0px;
+    box-shadow: 0px 0px 3px 0px white;
 }
-
-
 
 .section__text{
     color: white;
@@ -178,8 +220,9 @@ main{
 }
 
 #formulario {
+    text-shadow: 0px 0px 4px #250448;
     margin-top: 10px;
-    color: #fff;
+    color: #00ebea;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -234,8 +277,10 @@ input{
     padding: 7px;
     margin: 20px;
     border: none;
-    background: rgba(37, 4, 72, 0.8);
-    color: #ffffff;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #008d8d;
+    font-weight: 500;
 }
 
 textarea{
@@ -243,10 +288,12 @@ textarea{
     padding: 7px;
     margin: 0px 6px;
     border: none;
-    color: #230085;
+    border-radius: 4px;
+    color: #008d8d;
     background: rgba(255, 255, 255, 0.8);
     max-height: 80px;
     resize: none;
+    font-weight: 500;
 }
 
 textarea:active{
@@ -257,31 +304,33 @@ textarea:active{
     width: 100px;
     height: 70px;
     padding: 8px;
-    margin: 10px 20px;
+    margin: 20px 20px;
     border: 2px solid #fdcb01;
-    background-color: #230085;
+    background-color: #00ebea;
     color: rgb(255, 255, 255);
     border-radius: 5px;
+    text-shadow: 0px 0px 4px #250448;
 }
 
 .boton:hover{
+    background-color: #01cece;
     border: none;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 .boton:active{
-    background-color: #3000b6;
+    background-color: #00ffff;
     border: 2px solid #f1ee1e;
     border-radius: 10px;
 }
 
 
 .footer{
-    height: auto;
     display: flex;
     width: 100%;
+    height: 100px;
     background: #fdcb01;
-    color: black;
+    color: #F7F6F2;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -304,7 +353,7 @@ textarea:active{
 .footer__ul{    
     display: flex;
     list-style-type: disc;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-end;
     align-items: flex-end;
@@ -313,6 +362,14 @@ textarea:active{
 
 .footer__li{
     display: flex;
-    padding: 0px 3px;
-    font-size: 15px;
+    list-style-type: disc;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer__li img{
+    width: 20px;
+    height: 20px;
 }
