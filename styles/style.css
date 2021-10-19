@@ -87,17 +87,15 @@ figure {
 .fig__cap a:hover{
     color: #F7F6F2;
     text-decoration: none;
-    animation: 2s texto infinite reverse;
+    animation: 3s texto infinite alternate-reverse;
 }
 
 @keyframes texto{
     from{
-        -webkit-text-stroke: 0.1px white;
-        text-shadow: 0px 0px 1px #00ebea;
+        -webkit-text-stroke: 1px white;
     }
     to{
-        -webkit-text-stroke: 0.5px white;        
-        text-shadow: 0px 0px 3px #00ebea;
+        -webkit-text-stroke: 1px black;
     }
 
 }
@@ -206,11 +204,17 @@ main{
 }
 
 .galeria__img img:hover{
-    height: 110px;
-    width: 100%;
-    border-radius: 25px;
-    padding: 0px;
-    box-shadow: 0px 0px 3px 0px white;
+    animation: 1s agrandar forwards;
+}
+
+@keyframes agrandar {
+    to{
+        height: 110px;
+        width: 100%;
+        border-radius: 25px;
+        padding: 0px;
+        box-shadow: 0px 0px 3px 0px white;
+    }
 }
 
 .section__text{
@@ -253,6 +257,17 @@ main{
     width: 80%;
     border-radius: 2px;
 }
+
+.img__container img:hover{
+    animation: zoom 1s forwards;
+}
+
+@keyframes zoom {
+    to{
+        transform: scale(1.5);
+    }    
+}
+
 
 
 .ul__formulario{
