@@ -12,7 +12,7 @@
     <title>Foto Comodoro</title>
 </head>
 <body>
-    <header> <!--Encabezado principal que voy a hacer en modo de barra la cual va a contener logo y barras separadas-->
+    <header class="bg-warning bg-gradient">
         <figure class="fig">
         <a href="index.html">
             <img loading="lazy" src="images/icono2.svg" alt="foto, comodoro, camara" class="fig__img">
@@ -27,103 +27,60 @@
         <nav class="nav">
             <ul class="nav__ul">
                 <li class="nav__li"><a href="index.html">Inicio</a></li>
-                <li class="nav__li"><a href="#">Sobre Mi</a></li>
+                <li class="nav__li"><a href="#sobre_mi">Sobre Mi</a></li>
                 <li class="nav__li"><a href="#formulario">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main> <!--Esto lo voy a usar para las diferentes secciones-->
-        <section class="galeria">
-            <div class="galeria__img">
-                <a href="#one"><img loading="lazy" src="images/IMG_1242.webp" alt="Problemas al cargar el archivo"></a>
-                <a href="#two"><img loading="lazy" src="images/IMG_1318.webp" alt="Problemas al cargar el archivo"></a>
-                <a href="#three"><img loading="lazy" src="images/IMG_1337.webp" alt="Problemas al cargar el archivo"></a>
-                <a href="#four"><img loading="lazy" src="images/IMG_1344.webp" alt="Problemas al cargar el archivo"></a>
-                <a href="#five"><img loading="lazy" src="images/IMG_1469.webp" alt="Problemas al cargar el archivo"></a>
-                <a href="#six"><img loading="lazy" src="images/IMG_1494.webp" alt="Problemas al cargar el archivo"></a>
-            </div>
+    <main>
+        <section class="welcome">
+            <h2>Bienvenidos a mi galeria</h2>
         </section>
-
-        <div class="separador"><img loading="lazy" src="images/divisor.svg" alt="divisor"></div>
-
-        <section class="section" id="one">
-            <div class="img__container">
-                <img loading="lazy" src="images/IMG_1242.webp" alt="Imagen">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/IMG_1242.webp" class="d-block w-100" alt="tu navegador no soporta el archivo">
+              </div>
+              <div class="carousel-item">
+                <img src="images/IMG_1318.webp" class="d-block w-100" alt="tu navegador no soporta el archivo">
+              </div>
+              <div class="carousel-item">
+                <img src="images/IMG_1337.webp" class="d-block w-100" alt="tu navegador no soporta el archivo">
+              </div>
+              <div class="carousel-item">
+                <img src="images/IMG_1344.webp" class="d-block w-100" alt="tu navegador no soporta el archivo">
+              </div>
+              <div class="carousel-item">
+                <img src="images/IMG_1469.webp" class="d-block w-100" alt="tu navegador no soporta el archivo">
+              </div>
+              <div class="carousel-item">
+                <img src="images/IMG_1494.webp" class="d-block w-100" alt="tu navegador no soporta el archivo">
+              </div>
+              <div class="carousel-item">
+                <img src="images/IMG_1497.JPG" class="d-block w-100" alt="tu navegador no soporta el archivo">
+              </div>
             </div>
-            <div class="section__text">
-            <h2>TITULO</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laudantium corrupti sint ad reprehenderit quidem itaque repellat explicabo consequuntur saepe sapiente deserunt eligendi ex, nobis nostrum vel iure, magni veniam?</p>
-            </div>
-           
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <section class="section">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sapiente amet ex autem voluptatibus quidem omnis aliquid temporibus nisi placeat deserunt tempore, in inventore voluptas, provident cum. Quo, laborum fugit.
+            Assumenda, fuga ea nesciunt voluptatem dolore architecto accusamus nulla excepturi possimus expedita enim quis iusto totam illum sequi necessitatibus doloribus iste veniam, commodi a ab harum. Dignissimos maxime quia quasi.
+            Mollitia debitis aliquam iure hic ex totam, distinctio, officiis magnam similique reprehenderit illo quis. Eos incidunt laudantium nesciunt vero nihil quaerat consectetur! Est consectetur facilis in adipisci similique quasi officiis.</p>
         </section>
+        <section class="section section__text">
+            <h2 id="sobre_mi">Sobre mi</h2>
 
-        <div class="separador"><img loading="lazy" src="images/divisor.svg" alt="divisor"></div>
-
-        <section class="section" id="two">
-            <div class="img__container">
-                <img loading="lazy" src="images/IMG_1318.webp" alt="Imagen">
-            </div>
-            <div class="section__text">
-            <h2>TITULO</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laudantium corrupti sint ad reprehenderit quidem itaque repellat explicabo consequuntur saepe sapiente deserunt eligendi ex, nobis nostrum vel iure, magni veniam?</p>
-            </div>
-           
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis voluptates, aspernatur voluptatem, autem labore obcaecati quo soluta ducimus odit impedit, dolorum ad facilis. Omnis quas quidem voluptate? Dolorum, accusantium a.</p>
         </section>
-
-        <div class="separador"><img loading="lazy" src="images/divisor.svg" alt="divisor"></div>
-        
-        <section class="section" id="three">
-            <div class="img__container">
-                <img loading="lazy" src="images/IMG_1337.webp" alt="Imagen">
-            </div>
-            <div class="section__text">
-            <h2>TITULO</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laudantium corrupti sint ad reprehenderit quidem itaque repellat explicabo consequuntur saepe sapiente deserunt eligendi ex, nobis nostrum vel iure, magni veniam?</p>
-            </div>
-           
-        </section>
-
-        <div class="separador"><img loading="lazy" src="images/divisor.svg" alt="divisor"></div>
-
-        <section class="section" id="four">
-            <div class="img__container">
-                <img loading="lazy" src="images/IMG_1344.webp" alt="Imagen">
-            </div>
-            <div class="section__text">
-            <h2>TITULO</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laudantium corrupti sint ad reprehenderit quidem itaque repellat explicabo consequuntur saepe sapiente deserunt eligendi ex, nobis nostrum vel iure, magni veniam?</p>
-            </div>
-           
-        </section>
-
-        <div class="separador"><img loading="lazy" src="images/divisor.svg" alt="divisor"></div>
-
-        <section class="section" id="five">
-            <div class="img__container">
-                <img loading="lazy" src="images/IMG_1469.webp" alt="Imagen">
-            </div>
-            <div class="section__text">
-            <h2>TITULO</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laudantium corrupti sint ad reprehenderit quidem itaque repellat explicabo consequuntur saepe sapiente deserunt eligendi ex, nobis nostrum vel iure, magni veniam?</p>
-            </div>
-           
-        </section>
-
-        <div class="separador"><img loading="lazy" src="images/divisor.svg" alt="divisor"></div>
-
-        <section class="section" id="six">
-            <div class="img__container">
-                <img loading="lazy" src="images/IMG_1494.webp" alt="Imagen">
-            </div>
-            <div class="section__text">
-            <h2>TITULO</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laudantium corrupti sint ad reprehenderit quidem itaque repellat explicabo consequuntur saepe sapiente deserunt eligendi ex, nobis nostrum vel iure, magni veniam?</p>
-            </div>
-           
-        </section>
-
-        <div class="separador"><img loading="lazy" src="images/divisor.svg" alt="divisor"></div>
 
         <section id="formulario" class="formulario">
             <h2 id="formulario">Contacto</h2>
@@ -145,7 +102,7 @@
                 </ul>
             </form>
         </section>
-
+        
     </main>
 
     <footer class="footer"> <!--pie de pagina-->
