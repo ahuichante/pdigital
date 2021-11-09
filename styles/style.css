@@ -11,6 +11,7 @@ body{
     font-family: 'Open Sans Condensed';
     box-sizing: border-box;
     width: 100%;
+    height: 100%;
     background-image: url(../images/background.png);
     background-repeat: repeat;
     background-attachment: local;
@@ -27,9 +28,13 @@ body{
     }
 }
 
+main{
+    height: 100%;
+}
+
 
 header{
-    height: 204px;
+    height: 250px;
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -38,6 +43,7 @@ header{
     align-items: center;
     justify-content: center;
 }
+
 
 figure {
     display: inline-flex;
@@ -161,12 +167,6 @@ nav {
     font-size: 23px;
 }
 
-.separador{
-    
-    margin: 25px auto;
-    width: 90%;
-}
-
 .section {
     margin-top: 50px;
     color: #f5f4ef;
@@ -187,7 +187,7 @@ nav {
 .welcome{
     display: flex;
     width: 100%;
-    height: 300px;
+    height: 390px;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -199,7 +199,6 @@ nav {
     color: #f5f4ef;
     width: auto;
     font-size: 7vh;
-    text-align: left;
 }
 
 h2 {
@@ -222,73 +221,15 @@ h2 {
 }
 
 .formulario{
-    margin: 50px 0px;
-}
-
-.formulario form{
-    display: flex;
-    color: #ffffff;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-}
-
-
-.ul__formulario{
-    list-style: none;
-}
-
-.li_formulario{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-content: center;
-}
-
-label{
-    margin: 0px auto;
-}
-
-input {
-    width: 200px;
-    padding: 7px;
-    margin: 20px auto;
-    border: none;
-    background: rgba(255, 255, 255, 0.8);
-    color: #008d8d;
-    font-weight: 500;
-    text-align: justify;
-    border-radius: 4px
-;
-}
-
-textarea{
-    width: 220px;
-    padding: 7px;
-    margin: 20px auto;
-    border: none;
-    border-radius: 4px;
-    color: #008d8d;
-    background: rgba(255, 255, 255, 0.8);
-    max-height: 100px;
-    resize: none;
-    font-weight: 500;
-    text-align: left;
-}
-
-textarea:active{
-    border-style: none;
+    margin-bottom: 30px;
 }
 
 .boton{
     width: 100px;
     height: 70px;
     padding: 8px;
-    margin: 20px 20px;
     border: 2px solid #fdcb01;
-    background-color: #00ebea;
+    background-color: rgba(90, 230, 255, 0.8);
     color: rgb(255, 255, 255);
     border-radius: 5px;
     text-shadow: 0px 0px 4px #250448;
@@ -305,13 +246,13 @@ textarea:active{
     background-color: #00ffff;
     border: 2px solid #f1ee1e;
     border-radius: 10px;
-}
+ }
 
 
 .footer{
     display: flex;
     width: 100%;
-    height: 150px;
+    height: 160px;
     background: #fdcb01;
     color: #F7F6F2;
     justify-content: space-around;
@@ -321,7 +262,7 @@ textarea:active{
 }
 
 .footer p{
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 .footer a{

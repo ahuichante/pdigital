@@ -12,7 +12,7 @@
     <title>Foto Comodoro</title>
 </head>
 <body>
-    <header class="bg-warning bg-gradient">
+    <header class="bg-warning bg-gradient rounded-bottom border-3">
         <figure class="fig">
         <a href="index.html">
             <img loading="lazy" src="images/icono2.svg" alt="foto, comodoro, camara" class="fig__img">
@@ -35,12 +35,12 @@
 
     <main>
         <section class="welcome">
-            <h2>Bienvenidos a mi galeria</h2>
+            <h2 class="align-middle user-select-none">Bienvenidos a mi galeria</h2>
         </section>
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="images/IMG_1242.webp" class="d-block w-100" alt="tu navegador no soporta el archivo">
+                <img src="images/IMG_1242.webp" class="d-block w-100 img-fluid" alt="tu navegador no soporta el archivo">
               </div>
               <div class="carousel-item">
                 <img src="images/IMG_1318.webp" class="d-block w-100" alt="tu navegador no soporta el archivo">
@@ -77,29 +77,31 @@
             Mollitia debitis aliquam iure hic ex totam, distinctio, officiis magnam similique reprehenderit illo quis. Eos incidunt laudantium nesciunt vero nihil quaerat consectetur! Est consectetur facilis in adipisci similique quasi officiis.</p>
         </section>
         <section class="section section__text">
-            <h2 id="sobre_mi">Sobre mi</h2>
+            <h2 id="sobre_mi" class="user-select-none">Sobre mi</h2>
 
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis voluptates, aspernatur voluptatem, autem labore obcaecati quo soluta ducimus odit impedit, dolorum ad facilis. Omnis quas quidem voluptate? Dolorum, accusantium a.</p>
         </section>
 
-        <section id="formulario" class="formulario">
-            <h2 id="formulario">Contacto</h2>
-            <form action="formulario.php" method="POST">
-                <ul class="ul__formulario">
-                    <li class="li_formulario">
-                        <label for="name"> Nombre :</label>
-                        <input type="name" name="name" required placeholder="Axel" maxlength="20">
-                    </li>
-                    <li class="li_formulario">
-                        <label for="email"> E-mail :</label>
-                        <input type="email" name="email" required placeholder="ejemplo@mail.com" maxlength="40">
-                    </li>
-                    <li class="li_formulario">
-                        <label for="comentarios"> Comentarios :</label>
-                        <textarea name="comentarios" cols="10" rows="10" placeholder="Escriba Aqui Su comentario"></textarea>
-                        <input type="submit" class="boton" value="Enviar">
-                    </li>
-                </ul>
+        <section id="formulario" class="formulario container">
+            <h2 id="formulario" class="user-select-none">Contacto</h2>
+            
+            <form acti-12on="formulario.php" method="POST" class="col">
+                <div class="form-floating mb-3 col-10 col-lg-7">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="axel@example.com">
+                    <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating mb-3 col-10 col-lg-7">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="axel@example.com">
+                    <label for="floatingInput">Asunto</label>
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text user-select-none">Mensaje</span>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+
+                <button type="submit" class="boton btn btn-primary col-12">Enviar</button>
+                </div>
             </form>
         </section>
         
@@ -109,11 +111,11 @@
         <div>
             <em>
             <a href="#" target="_blank"></a>
-            <p>&copy;2021 Huichante Axel</p>
+            <p class="user-select-none">&copy;2021 Huichante Axel</p>
             </em>
         </div>
         <div class="contacto">
-            <p class="footer__p">Otros Contactos</p>
+            <p class="footer__p user-select-none">Otros Contactos</p>
             <ul class="footer__ul">
                 <li class="footer__li"><a href="https://www.facebook.com/profile.php?id=100055884692985" target="_blank"><img loading="lazy" src="images/facebook.svg" alt="Facebook"></a></li>
                 <li class="footer__li"><a href="https://www.instagram.com/ahuichante/?hl=es" target="_blank"><img loading="lazy" src="images/instagram.svg" alt="Instagram"></a></li>
