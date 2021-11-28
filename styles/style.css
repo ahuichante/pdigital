@@ -1,11 +1,12 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
 
-body{
+body {
+    background-color: #fff;
     margin: 0px;
     padding: 0px;
     font-family: 'Open Sans Condensed';
@@ -20,20 +21,19 @@ body{
 }
 
 @keyframes urlfondo {
-    from{
+    from {
         background-position: top center;
     }
-    to{
+    to {
         bottom: center top;
     }
 }
 
-main{
+main {
     height: 100%;
 }
 
-
-header{
+header {
     height: 250px;
     display: flex;
     width: 100%;
@@ -44,14 +44,13 @@ header{
     justify-content: center;
 }
 
-
 figure {
     display: inline-flex;
     width: 50%;
     align-content: flex-start;
     justify-content: center;
     align-items: center;
-    color:   #F7F6F2;
+    color: #F7F6F2;
 }
 
 .fig {
@@ -65,59 +64,53 @@ figure {
     justify-content: center;
 }
 
-
-
-.fig__img{
+.fig__img {
     max-height: 100px;
     width: 100px;
-
 }
 
-.fig__img:hover{
+.fig__img:hover {
     animation: 5s .001s spin infinite alternate-reverse;
 }
 
-@keyframes spin{
+@keyframes spin {
     from {
         border: 1px solid black;
         border-radius: 50px;
-        transform:rotate(0deg);
+        transform: rotate(0deg);
     }
     to {
         border: 1px solid black;
         border-radius: 50px;
-        transform:rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
-
-.fig__cap{
+.fig__cap {
     width: 50%;
 }
 
-.fig__cap a{
+.fig__cap a {
     color: #F7F6F2;
     -webkit-text-stroke: 1px black;
     height: 100px;
     text-decoration: none;
 }
 
-.fig__cap a:hover{
+.fig__cap a:hover {
     color: #F7F6F2;
     text-decoration: none;
     animation: 3s texto infinite alternate-reverse;
 }
 
-@keyframes texto{
-    from{
+@keyframes texto {
+    from {
         -webkit-text-stroke: 1px white;
     }
-    to{
+    to {
         -webkit-text-stroke: 1px black;
     }
-
 }
-
 
 nav {
     display: flex;
@@ -130,26 +123,27 @@ nav {
     flex-wrap: wrap;
 }
 
-.nav a{
+.nav a {
     margin: 0px 20px;
     padding: 0px 5px;
-    color:#F7F6F2;
+    color: #F7F6F2;
     text-decoration: none;
 }
 
-.nav a:hover{
+.nav a:hover {
     color: #f5f4ef;
     text-decoration: none;
     font-weight: 600;
 }
 
-.nav a:active{
+.nav a:active {
     color: #ffffff;
     text-decoration: none;
     font-weight: 600;
 }
 
-.nav__ul{    
+
+/* .nav__ul {
     display: flex;
     list-style-type: disc;
     flex-direction: row;
@@ -161,11 +155,12 @@ nav {
     margin-right: 3%;
 }
 
-.nav__li{
+.nav__li {
     display: flex;
     padding: 0px 3px;
     font-size: 23px;
 }
+ */
 
 .section {
     margin-top: 50px;
@@ -183,8 +178,7 @@ nav {
     text-align: center;
 }
 
-
-.welcome{
+.welcome {
     display: flex;
     width: 100%;
     height: 390px;
@@ -194,8 +188,7 @@ nav {
     margin-bottom: 100px;
 }
 
-
-.welcome h2{
+.welcome h2 {
     color: #f5f4ef;
     width: auto;
     font-size: 7vh;
@@ -209,10 +202,9 @@ h2 {
     flex-direction: column;
     text-align: center;
     width: 100%;
-
 }
 
-.section__text{
+.section__text {
     margin: 15px 0px;
     padding: 5px 10px;
     color: white;
@@ -220,11 +212,11 @@ h2 {
     width: 100%;
 }
 
-.formulario{
+.formulario {
     margin-bottom: 30px;
 }
 
-.boton{
+.boton {
     width: 100px;
     height: 70px;
     padding: 8px;
@@ -236,20 +228,19 @@ h2 {
     text-align: center;
 }
 
-.boton:hover{
+.boton:hover {
     background-color: #01cece;
     border: none;
     border-radius: 3px;
 }
 
-.boton:active{
+.boton:active {
     background-color: #00ffff;
     border: 2px solid #f1ee1e;
     border-radius: 10px;
- }
+}
 
-
-.footer{
+.footer {
     display: flex;
     width: 100%;
     height: 160px;
@@ -261,35 +252,35 @@ h2 {
     flex-direction: row;
 }
 
-.footer p{
+.footer p {
     margin-right: 0px;
 }
 
-.footer a{
-        color:#F7F6F2;
-        text-decoration:none; 
+.footer a {
+    color: #F7F6F2;
+    text-decoration: none;
 }
 
-.footer a:hover{
-    color:#dee5ed;
+.footer a:hover {
+    color: #dee5ed;
     text-shadow: 1px;
 }
 
-.contacto{
+.contacto {
     color: white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
-.footer__ul{    
+.footer__ul {
     display: flex;
     list-style-type: disc;
     margin: auto;
     padding: 0px;
 }
 
-.footer__li{
+.footer__li {
     padding: 5px;
     display: flex;
     list-style-type: disc;
@@ -299,7 +290,7 @@ h2 {
     justify-content: space-evenly;
 }
 
-.footer__li img{
+.footer__li img {
     border-radius: 50px;
     box-shadow: 1px 1px 1px 0px grey;
     width: 20px;
