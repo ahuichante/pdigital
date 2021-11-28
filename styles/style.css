@@ -29,11 +29,20 @@ body {
     }
 }
 
+<<<<<<< HEAD
 main {
     height: 100%;
 }
 
 header {
+=======
+main{
+    height: 100%;
+}
+
+
+header{
+>>>>>>> origin/main
     height: 250px;
     display: flex;
     width: 100%;
@@ -43,6 +52,7 @@ header {
     align-items: center;
     justify-content: center;
 }
+
 
 figure {
     display: inline-flex;
@@ -160,7 +170,10 @@ nav {
     padding: 0px 3px;
     font-size: 23px;
 }
+<<<<<<< HEAD
  */
+=======
+>>>>>>> origin/main
 
 .section {
     margin-top: 50px;
@@ -212,11 +225,19 @@ h2 {
     width: 100%;
 }
 
+<<<<<<< HEAD
 .formulario {
     margin-bottom: 30px;
 }
 
 .boton {
+=======
+.formulario{
+    margin-bottom: 30px;
+}
+
+.boton{
+>>>>>>> origin/main
     width: 100px;
     height: 70px;
     padding: 8px;
@@ -238,7 +259,7 @@ h2 {
     background-color: #00ffff;
     border: 2px solid #f1ee1e;
     border-radius: 10px;
-}
+ }
 
 .footer {
     display: flex;
@@ -252,7 +273,11 @@ h2 {
     flex-direction: row;
 }
 
+<<<<<<< HEAD
 .footer p {
+=======
+.footer p{
+>>>>>>> origin/main
     margin-right: 0px;
 }
 
