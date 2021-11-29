@@ -1,0 +1,123 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    .transparent {
+        height: 100%;
+    }
+    
+    .transparent::before {
+        content: "";
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-image: url(../images/fondo.JPG);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        opacity: 0.7;
+    }
+    
+    .main {
+        background-color: none;
+    }
+    
+    nav a {
+        text-shadow: 0px 0px 4px #fff !important;
+    }
+    
+    .thumbnail {
+        display: block;
+        position: relative !important;
+        z-index: 0;
+    }
+    
+    .caption,
+    .footer,
+    .navegacion,
+    .h1 {
+        display: block !important;
+        position: fixed !important;
+    }
+    
+    .navegacion {
+        background-color: #fff1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 400;
+    }
+    
+    .caption {
+        top: 10%;
+        left: 1%;
+        width: 90%;
+    }
+    
+    .caption h1,
+    h1,
+    h2 {
+        color: rgba(255, 255, 255, 0.993);
+        text-shadow: 1px 1px rgb(0, 0, 0);
+    }
+    
+    section {
+        margin-top: 60px!important;
+        z-index: 300;
+    }
+    
+    section p {
+        margin: 50px 30px 10px 30px !important;
+        color: #fff;
+    }
+    
+    section a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .noselect {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+    
+    .h1 {
+        padding-top: 40px;
+        padding-left: 200px;
+        transform: rotate(-90deg);
+    }
+    
+    .dropdown-menu {
+        background-color: #fff0;
+        background-clip: padding-box;
+        border: 1px solid rgba(0, 0, 0, 0);
+        border-radius: .25rem;
+    }
+    
+    .divisor {
+        background-color: none;
+        height: 40px;
+        width: 100%;
+    }
+    
+    .footer {
+        position: fixed !important;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+        z-index: 500;
+    }
+    
+    .hidde {
+        display: none;
+    }
